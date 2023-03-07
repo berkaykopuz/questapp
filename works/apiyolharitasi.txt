@@ -1,0 +1,10 @@
+/users/{userID}
+../profile
+..
+
+
+/posts?user={userID}
+/posts/{postID}
+
+
+
