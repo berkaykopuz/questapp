@@ -1,4 +1,4 @@
-package com.kopuz.questApp.repositories;
+package com.project.questapp.repos;
 
 import java.util.List;
 
@@ -6,9 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.kopuz.questApp.entities.Like;
+import com.project.questapp.entities.Like;
 
 public interface LikeRepository extends JpaRepository<Like, Long> {
+
 	List<Like> findByUserIdAndPostId(Long userId, Long postId);
 
 	List<Like> findByUserId(Long userId);

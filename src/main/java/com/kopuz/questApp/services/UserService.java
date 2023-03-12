@@ -49,6 +49,10 @@ public class UserService { //Business mantiginin dondugu katmandir. Repositoryde
 		
 	}
 
+	public User getUserByUserName(String userName) {
+		return userRepository.findByUserName(userName);
+	} 
+
 	
 	
 }

@@ -1,11 +1,11 @@
-package com.kopuz.questApp.repositories;
+package com.project.questapp.repos;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.kopuz.questApp.entities.User;
+import com.project.questapp.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
 	User findByUserName(String userName);
-	
+
 }
